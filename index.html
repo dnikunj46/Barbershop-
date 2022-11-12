@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+    <title>Barber Shop</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .start-50 {
+            margin-top: 70px;
+        }
+
+        .container-fluid {
+            margin: 0px;
+            padding: 0px;
+            background-color: black;
+        }
+        .bg-dark{
+            background-color: black !important;
+        }
+        .n1{
+            background-color: transparent !important;
+        }
+
+        .navbar-brand {
+            padding-left: 30px;
+            color: white;
+        }
+
+        .nav-link {
+            color: white !important;
+        }
+
+        .nav-link :active {
+            color: rgb(224, 234, 26) !important;
+        }
+
+        .navbar-nav {
+            padding-right: 30px;
+
+            /* align-items: flex-start; */
+        }
+
+        .bg-transparent {
+            background-image: url(images/concept-barbershop-elegant-man-gets-hair-trimming-from-female-hairdresser.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 800px;
+            width: auto;
+            position: relative;
+        }
+
+
+        .display-1 {
+            color: white !important;
+            position: relative;
+            font-weight: bold;
+            font-size: auto;
+        }
+
+        .display-2 {
+            color: white;
+            font-size: medium;
+            font-weight: bold;
+        }
+
+        .card {
+            border-radius: 0px !important;
+        }
+
+        .c1 {
+            /* height: 300px; */
+        }
+
+        .container {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .r3 {
+            margin-top: 100px;
+            margin-left: 10px;
+            margin-right: 10px;
+            /* margin-bottom: 10px; */
+        }
+
+        .textcenter1 {
+            margin-top: 100px;
+            color: white;
+        }
+
+        .f1 {
+            color: rgb(237, 138, 9);
+            font-weight: bold;
+            font-size: xx-large;
+        }
+
+        .btn-primary {
+            background-color: rgb(237, 138, 9);
+        }
+
+        .f2 {
+            /* font-weight: bold; */
+            font-size: x-large;
+        }
+        .f4{
+            color: rgb(0, 0, 0);
+           
+        }
+        .bgf{
+            background-color: rgb(237, 138, 9) ;
+        }
+
+
+        @media screen and (max-width:752px) {
+            .bg-transparent {
+                width: auto;
+                background-size: contain;
+                height: auto;
+            }
+
+            .display-1 {
+                font-size: medium;
+            }
+
+            .display-2 {
+                font-weight: normal;
+                font-size: small;
+            }
+
+            .start-50,
+            .position-absolute {
+                left: 50%;
+                position: initial !important;
+                margin-top: 0px !important;
+                word-wrap: break-word;
+            }
+            .navbar-toggler{
+                background-color: white;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid bg-dark">
+        <div class="p-3 mb-2 bg-transparent text-dark">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid n1">
+                    <a class="navbar-brand" href="#">Navbar</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Features</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Testimonals</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </nav>
+            <div class="container">
+                <div class="row g-0">
+                    <div class="col-sm-3 col-md-1">
+                        <div class="position-relative">
+
+                            <div class="position-absolute top-50 start-50">
+                                <h1 class="display-1 text-sm-start">Your Salon Experience Made Simple</h1>
+                                <p class="display-2 text-sm-start">Manage Your appointment and book your
+                                    favourite specialist using salonstack.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="position-relative">
+                <div class="position-absolute top-50 start-0">
+                    <div class="card bg-transparent mb-3" style="width: 18rem;">
+                        <div class="card-body bg-transparent ">
+                            <h5 class="card-title" style="Height:200px">Your Salon Experience Made Simple</h5>
+                            <p class="card-text">Manage Your appointment and book your
+                                favourite specialist using salonstack.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div> -->
+                </div>
+            </div>
+        </div>
+        <!-- <div class="row"> -->
+        <div class="container bg-dark r2">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card bg-dark text-white">
+                        <img src="images/barber-equipment-working-surface-by-mirror-barbershop.jpg" class="card-img-top"
+                            alt="i1" height="200px" width="150px">
+                        <div class="card-img-overlay">
+                            <i class="fa fa-user"></i>
+                            <!-- <h5 class="card-title">Card title</h5> -->
+                            <p class="card-text">This is a longer card with supporting text below as a natural
+                                lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card bg-dark text-white">
+                        <img src="images/barber-equipment-working-surface-by-mirror-barbershop.jpg" class="card-img-top"
+                            alt="i1" height="200px" width="150px">
+                        <div class="card-img-overlay">
+                            <i class="fa fa-user"></i>
+                            <!-- <h5 class="card-title">Card title</h5> -->
+                            <p class="card-text">This is a longer card with supporting text below as a natural
+                                lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card bg-dark text-white">
+                        <img src="images/barber-equipment-working-surface-by-mirror-barbershop.jpg" class="card-img-top"
+                            alt="i1" height="200px" width="100px">
+                        <div class="card-img-overlay">
+                            <i class="fa fa-user"></i>
+                            <!-- <h5 class="card-title">Card title</h5> -->
+                            <p class="card-text">This is a longer card with supporting text below as a natural
+                                lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container bg-dark">
+            <div class="card mb-3 c1">
+                <div class="row g-0">
+                    <div class="col-md-6">
+                        <img src="images/male-entrepreneur-working-computer-home.jpg" class="img-fluid rounded-start"
+                            alt="c2">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card-body">
+                            <!-- <h5 class="card-title ">Card title</h5> -->
+                            <!-- <i style='font-size:24px' class='fas'>&#xf10d;</i> -->
+                            <!-- <p>&#xf10d</p> -->
+                            <i class="fas fa-quote-left"></i>
+                            <p class="card-text r3">I was amaised by how seamless my salon experience became after i
+                                started using The Barberry to make my salon appointments.I always got the chance to plan
+                                out mytime with my family my favourite specilaist and the hassel of waiting is no more!
+                                .</p>
+                            <!-- <p class="card-footer">Last updated 3 mins ago</p> -->
+                            <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source
+                                    Title</cite></footer>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bg-dark">
+            <div class="card text-center bg-dark text-white">
+                <img src="images/vintage-chairs-barbershop.jpg" class="card-img" alt="i4" height="400px">
+                <div class="card-img-overlay">
+                    <div class="textcenter1">
+                        <h5 class="card-title f1">Book Now</h5>
+                        <p class="card-text f2">Hurry up and Book now to
+                            enjoy the latest salon offers</p>
+                        <!-- <p class="card-text">Last updated 3 mins ago</p> -->
+                        <a href="#" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="container-fluid">
+            <div class="card text-center bgf">
+                <!-- <h5 class="card-header">Featured</h5> -->
+                <div class="card-body">
+                    <div class="textcenter1 f4">
+                        <h5 class="card-title">Contact us</h5>
+                        <p class="card-text">thebarbery@gmail.com.</p>
+                        <p class="card-text">+91xxxxxxxxxx</p>
+                        <p class="card-text">panchavati char rasta ambavadi Ahmedavad.</p>
+                        <a href="#" class="btn">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- </div> -->
+    </div>
+</body>
+
+</html>
